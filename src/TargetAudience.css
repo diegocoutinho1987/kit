@@ -1,0 +1,73 @@
+.target-section {
+  background-color: #f9f9f9; /* Light gray background to make white cards pop */
+  padding: 36px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.target-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.target-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #5ea6e5; /* Blue color from image */
+  margin-bottom: 60px;
+}
+
+.target-highlight {
+  font-weight: 800;
+}
+
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.target-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  transition: transform 0.3s ease;
+}
+
+.target-card:hover {
+  transform: translateY(-5px);
+}
+
+.target-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+.target-card strong {
+  font-weight: 800;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .target-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .target-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .target-title {
+    font-size: 28px;
+  }
+}

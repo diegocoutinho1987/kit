@@ -1,0 +1,59 @@
+.guarantee-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.guarantee-container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.guarantee-badge-wrapper {
+  flex-shrink: 0;
+}
+
+.guarantee-badge {
+  width: 150px;
+  height: auto;
+}
+
+.guarantee-content {
+  text-align: center; /* Based on the image, text seems centered relative to itself, or maybe left aligned? Image shows centered text block next to badge. Let's try center text alignment for the block. */
+  max-width: 500px;
+}
+
+.guarantee-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5ea6e5; /* Blue color */
+  margin-bottom: 20px;
+}
+
+.guarantee-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .guarantee-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .guarantee-title {
+    font-size: 24px;
+  }
+  
+  .guarantee-text {
+    font-size: 16px;
+  }
+}

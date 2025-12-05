@@ -1,0 +1,78 @@
+.steps-section {
+  background-color: #a56eb5; /* Purple background from image */
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.steps-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.steps-main-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 60px; /* Increased margin to accommodate badges */
+  color: #fff;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px; /* Vertical gap increased */
+}
+
+.step-card {
+  background-color: #5ea6e5; /* Blue background */
+  border: 4px solid #fff;
+  border-radius: 15px;
+  padding: 40px 20px 30px; /* Top padding increased for badge space */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.step-badge {
+  background: linear-gradient(to bottom, #cfa656, #b38b3c); /* Gold gradient */
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: -18px; /* Position it overlapping the top border */
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 95%;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 50px; /* More space between cards on mobile */
+  }
+  
+  .step-card {
+    margin-bottom: 0;
+  }
+}
